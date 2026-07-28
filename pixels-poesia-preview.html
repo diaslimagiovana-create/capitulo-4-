@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Pixels & Poesia</title>
+<style>
+* { box-sizing: border-box; }
+body {
+  font-family: 'Palatino Linotype', Georgia, serif;
+  margin: 0;
+  background-color: #FFF5F7;
+  color: #222222;
+  line-height: 1.6;
+}
+header {
+  background-color: #6D6875;
+  color: #FFFFFF;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 0 16px 0;
+  overflow: hidden;
+}
+header .capa {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  display: block;
+}
+header h1 {
+  margin: 16px 0 4px 0;
+  font-size: 2rem;
+}
+header p {
+  margin: 0;
+  padding: 0 16px;
+  opacity: 0.9;
+}
+main {
+  max-width: 800px;
+  margin: 24px auto;
+  padding: 0 16px;
+}
+.post {
+  background-color: #FFFFFF;
+  color: #222222;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  padding: 24px;
+  border: none;
+}
+.post-icone {
+  width: 80px;
+  height: 80px;
+  display: block;
+  margin-bottom: 16px;
+  border-radius: 8px;
+}
+h2 { margin-top: 0; color: #B5838D; }
+.autor { font-style: italic; opacity: 0.7; margin-top: -8px; }
+footer { text-align: center; padding: 16px; opacity: 0.6; font-size: 0.85rem; }
+</style>
+</head>
+<body>
+<header>
+<img src="data:image/png;base64,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" alt="Capa do blog Pixels & Poesia" class="capa">
+<h1>Pixels & Poesia</h1>
+<p>Onde a arte digital encontra a palavra escrita</p>
+</header>
+<main>
+<article class="post">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAIAAAABc2X6AAABb0lEQVR4nO2aQQ7CIBBFrfGW7jyEh/AQ7ryMK2/j1kUT00SlwPyZqZ//lpoAjw9TsE7P+2M3EvvsAUQjYXYkzI6E2ZEwOxJmR8LsSJgdCbMjYXbShM/XW0q/OcKzbYqzlrQ/y2DjQ1bCznxGGhyyEvbkV5iRISthN8oxhoWshH2oCTAmZCXsQH10ASErYTStoXmHPKH+4xGwGi+no72RNuGsW/sq9XPRtqQhcwynaVTNe3hrzq3j6d/D6cu7b+r7q3Ru1N29mx5LWc6Wfq3P4XhnY4+Ag0eks70vzEkrxjnh4LGKU+kGTij4LO0RNbZN/OUBOz74DOp6yA5eGFu34FVQCbMjYRseBw9smwdgW/W8n65DvBBfniXiL1uhCX/Vmz/8y5dp5UGXwyx/C5yOiIQr121M1L7CHVvUW9uxaFkKkl8xc3nVAhwuvNnh7sPIPey0DrG7Gvyb1vbR5YEdCbMjYXYkzI6E2ZEwO8MJvwBgRYGMjs7DnAAAAABJRU5ErkJggg==" alt="Ícone do blog Pixels & Poesia" class="post-icone">
+<h2>O verso escondido no código</h2>
+<p class="autor">Por: Estudante Alura</p>
+<p>Programar também é criar. Neste espaço vou explorar a interseção entre estética, arte generativa e a poesia que existe em cada linha bem escrita.</p>
+</article>
+</main>
+<footer><p>&copy; 2026 Pixels & Poesia</p></footer>
+</body>
+</html>
